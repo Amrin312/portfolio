@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+
+*, *::before , *::after {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --grey: hsl(184, 6%, 91%);
+    --dark-blue: hsl(210, 29%, 21%);
+}
+
+body {
+    background-color: var(--grey);
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    display: flex;
+    align-items: center;
+}
+
+.link {
+   padding: 30px;
+   text-decoration: none;
+   color: var(--dark-blue);
+   font-weight: 900;
+   font-size: 20px;
+}
+
+.header-left {
+    height: 40px;
+    width: auto;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.name {
+    font-size: 20px;
+    margin-top: 0%;
+    padding-left: 10px;
+    display: inline-block;
+    text-align: start;
+}
+
+#large-text {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#domain-name {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.content {
+    background-color: transparent;
+    width: 900px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.card {
+    position: relative;
+     width: 100%;
+     height: 100%;
+    text-align: center;
+     transition: transform 0.3s;
+     transform-style: preserve-3d;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.content:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card-front {
+    color: var(--dark-blue);
+    margin-top: 50px;
+}
+
+.card-back {
+    background-color: var(--grey);
+    color: var(--dark-blue);
+    transform: rotateY(180deg);
+    font-size: 50px;
+    font-weight: 600;
+}
+
+/*contact styles*/
+
+.email {
+    display: inline-flex;
+    gap: 10px;
+    line-height: 1.2;
+}
+
+.email a {
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+.linkedin {
+    display: flex;
+    gap: 10px;
+    line-height: 1.2;
+}
+
+.github {
+    display: flex;
+    gap: 10px;
+    line-height: 1.2;
+}
+
+.linkedin {
+    margin-left: 155px;
+}
+
+.github {
+    margin-left: 155px;
+}
+
+.card-back-contact h1 {
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+.container-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.content-contact {
+    background-color: transparent;
+    width: 700px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.card-front-contact, .card-back-contact {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card-contact {
+    position: relative;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     transition: transform 0.3s;
+     transform-style: preserve-3d;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.content-contact:hover .card-contact {
+    transform: rotateY(180deg);
+}
+
+.card-front-contact {
+    color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.card-back-contact {
+    background-color: var(--grey);
+    color: var(--dark-blue);
+    transform: rotateY(180deg);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+}
